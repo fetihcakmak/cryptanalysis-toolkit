@@ -49,7 +49,15 @@ main.py
 
 ---
 
-## ⚡ Kullanım
+## ⚡ Kurulum
+
+```bash
+git clone https://github.com/fetihcakmak/cryptanalysis-toolkit.git
+cd cryptanalysis-toolkit
+python main.py --demo   # Ek bağımlılık gerekmez (yalnızca stdlib)
+```
+
+## 🚀 Kullanım
 
 ```bash
 # Demo modu (tüm şifre türlerini test eder)
@@ -67,6 +75,24 @@ python main.py --xor-single "1b37373331363f78151b7f2b783431333d78"
 # Tekrarlı Anahtarla Yapılmış XOR Şifresi Kırma (Hex formatında veri)
 python main.py --xor-repeat "0b3637272a2b2e63622c2e69692a23693a2a3c6324202d623d63343c2a26226324272765272a282b2f20"
 ```
+
+## 🖥️ Örnek Çıktı
+
+```
+============================================================
+  CAESAR ŞİFRE ANALİZİ
+============================================================
+  Bulunan Kaydırma: 3
+  Çözülen Metin: HELLO WORLD
+```
+
+## ⚠️ Sınırlamalar
+
+Bu araç yalnızca klasik (Caesar, Vigenere, XOR) şifreleri kırar — AES, RSA gibi modern algoritmalara karşı bir etkisi yoktur ve bu amaçla tasarlanmamıştır. CTF kriptografi kategorileri ve klasik şifreleme eğitimleri için uygundur.
+
+## 📄 Lisans
+
+Bu depo şu an bir lisans dosyası içermiyor. Kullanım koşulları için proje sahibiyle iletişime geçin.
 
 ---
 
